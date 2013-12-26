@@ -1,0 +1,7 @@
+flake8==2.1.0
+mccabe==0.2.1
+pep8==1.4.6
+py==1.4.19
+pyflakes==0.7.3
+tox==1.6.1
+virtualenv==1.10.1
