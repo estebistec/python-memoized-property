@@ -2,14 +2,14 @@
 memoized_property
 =================
 
-.. image:: https://badge.fury.io/py/python-memoized-property.png
-    :target: http://badge.fury.io/py/python-memoized-property
+.. image:: https://badge.fury.io/py/memoized-property.png
+    :target: http://badge.fury.io/py/memoized-property
     
 .. image:: https://travis-ci.org/estebistec/python-memoized-property.png?branch=master
         :target: https://travis-ci.org/estebistec/python-memoized-property
 
-.. image:: https://pypip.in/d/python-memoized-property/badge.png
-        :target: https://crate.io/packages/python-memoized-property?version=latest
+.. image:: https://pypip.in/d/memoized-property/badge.png
+        :target: https://crate.io/packages/memoized-property?version=latest
 
 
 A simple python decorator for defining properties that only run their fget function once.
