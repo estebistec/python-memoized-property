@@ -23,7 +23,7 @@ class C(object):
     def name(self):
         "name's docstring"
         self.load_name_count += 1
-        return u"the name"
+        return "the name"
 
 
 class TestMemoizedProperty(unittest.TestCase):
