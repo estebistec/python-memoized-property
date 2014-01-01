@@ -23,7 +23,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='memoized-property',
-    version='1.0.0',
+    version='1.0.1',
     description='A simple python decorator for defining properties that only run their fget function once',
     long_description=readme + '\n\n' + history,
     author='Steven Cummings',
