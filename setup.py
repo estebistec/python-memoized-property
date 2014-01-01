@@ -31,6 +31,7 @@ setup(
     url='https://github.com/estebistec/python-memoized-property',
     py_modules=['memoized_property'],
     install_requires=[
+        'six==1.4.1',
     ],
     license="BSD",
     zip_safe=False,

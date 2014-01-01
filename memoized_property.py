@@ -3,6 +3,8 @@
 
 from functools import wraps
 
+import six
+
 
 def memoized_property(fget):
     """
@@ -18,21 +20,21 @@ def memoized_property(fget):
         ...     def name(self):
         ...         "name's docstring"
         ...         self.load_name_count += 1
-        ...         return u"the name"
+        ...         return "the name"
         >>> c = C()
         >>> c.load_name_count
         0
         >>> c.name
-        u"the name"
+        "the name"
         >>> c.load_name_count
         1
         >>> c.name
-        u"the name"
+        "the name"
         >>> c.load_name_count
         1
 
     """
-    attr_name = u'_{0}'.format(fget.__name__)
+    attr_name = six.text_type('_{0}').format(fget.__name__)
 
     @wraps(fget)
     def fget_memoized(self):
