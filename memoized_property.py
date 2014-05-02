@@ -3,8 +3,6 @@
 
 from functools import wraps
 
-import six
-
 
 def memoized_property(fget):
     """
@@ -34,7 +32,7 @@ def memoized_property(fget):
         1
 
     """
-    attr_name = six.text_type('_{0}').format(fget.__name__)
+    attr_name = '_{0}'.format(fget.__name__)
 
     @wraps(fget)
     def fget_memoized(self):
